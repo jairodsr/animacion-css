@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+      180deg,
+      rgba(14, 14, 19, 1) 0%,
+      rgba(16, 21, 55, 1) 53%,
+      rgba(13, 79, 191, 1) 100%
+    );
+    position: relative;
+}
+
+.cloud{
+    /* width: 200px;
+    height: 100px; */
+    position: absolute;
+}
+
+#cloud1{
+    left: 0%;
+    top: 2%;
+    width: 200px;
+    height: 210px;
+}
+
+#cloud2 {
+  left: 45%;
+  top: 0%;
+  width: 250px;
+  height: 300px;
+}
+#cloud3 {
+  left: 52%;
+  top: 0%;
+  width: 250px;
+  height: 300px;
+  transform: rotate(343deg);
+}
+
+#cloud4 {
+  left: 18%;
+  top: 10%;
+  width: 300px;
+  height: 250px;
+  transform: rotate(360deg);
+}
+#cloud5{
+  left: 68%;
+  top: 22%;
+  width: 200px;
+  height: 210px;
+  transform: rotate(185deg);
+}
+.s30nuevo{
+  width: 43%;
+  height: 30%;
+}
+
+.cloud .circle {
+  background-color: rgba(14, 16, 40, 1);
+  position: absolute;
+  color: white;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 30%;
+  left: 1%;
+}
+
+.circle2 {
+  top: 15%;
+  left: 30%;
+}
+.circle3 {
+  top: 30%;
+  right: 20%;
+}
+
+.s30 {
+  width: 30%;
+  height: 30%;
+}
+
+.s50 {
+  width: 50%;
+  height: 50%;
+}
+
+.s40 {
+  width: 40%;
+  height: 40%;
+}
+
+/** LUNA ***/
+.moon{
+  position: relative;
+  top: 2%;
+}
+
+.luna{
+  position: relative;
+  left: 78%;
+  width: 180px;
+  height: 180px;
+}
+
+/*** STARS **/
+.stars {
+  width: 100%;
+  height: 55vh;
+  position: absolute;
+  top: 0;
+}
+
+.stars .star {
+  font-size: 2rem; /*32px*/
+  position: absolute;
+  color: white;
+}
+
+#star1 {
+  font-size: 1rem; /*16px*/
+  left: 28%;
+  top: 70%;
+}
+
+#star2 {
+  font-size: 1rem;
+  left: 60%;
+  top: 2%;
+}
+#star3 {
+  font-size: 1rem;
+  left: 15%;
+  top: 2%;
+}
+
+#star4 {
+  font-size: 1rem;
+  top: 70%;
+  right: 5%;
+}
+
+#star5 {
+  font-size: 1rem;
+  top: 10%;
+  right: 5%;
+}
+
+#star6 {
+  font-size: 1rem;
+  right: 20%;
+  top: 50%;
+}
+
+#star7 {
+  font-size: 1rem;
+  right: 35%;
+    top: 70%;
+}
+
+#star8 {
+  font-size: 1rem;
+  right: 35%;
+  top: 70%;
+}
+
+#star9 {
+  font-size: 1rem;
+  left: 10%;
+  top: 55%;
+}
+
+#star10 {
+  left: 40%;
+  top: 45%;
+}
+
+#star11 {
+  right: 77%;
+    top: 20%;
+}
+
+#star12 {
+  left: 2%;
+  top: 65%;
+}
+
+/** starts animation **/
+
+.stars .star i {
+  font-size: 1em;
+  animation-name: ligth;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes ligth {
+  0% {
+    font-size: 0.5rem;
+    fill: white;
+    color: gray;
+  }
+  15% {
+    font-size: 1rem;
+    color: white;
+  }
+  30% {
+    font-size: 1.5rem;
+    color: gray;
+  }
+  55% {
+    font-size: 1rem;
+    color: white;
+  }
+  100% {
+    font-size: 0.5rem;
+    color: yellow;
+  }
+}
+
+/** WEED - BOTTOM ***/
+.bottom{
+  width: 100%;
+  height: 20vh;
+  background-color: #1C3128;
+  position: absolute;
+  top: 80%;
+}
+
+.bottom .planta {
+  position: absolute;
+  color: #314d0f;
+}
+
+#planta1 {
+  left: 28%;
+  top: 70%;
+}
+#planta2{
+  left: 60%;
+  top: 2%;
+}
+#planta3 {
+  left: 15%;
+  top: 2%;
+}
+
+#planta4 {
+  top: 70%;
+  right: 5%;
+}
+
+#planta5 {
+  top: 10%;
+  right: 5%;
+}
+
+#planta6 {
+  right: 20%;
+  top: 50%;
+}
+
+#planta7 {
+  right: 35%;
+  top: 70%;
+}
+
+#planta8 {
+  right: 35%;
+  top: 70%;
+}
+#planta9 {
+  left: 10%;
+  top: 55%;
+}
+
+#planta10 {
+  left: 40%;
+  top: 45%;
+}
+
+#planta11 {
+  right: 77%;
+    top: 20%;
+}
+
+#planta12{
+  left: 2%;
+  top: 65%;
+}
+
+.bottom .planta i {
+  animation-name: weed;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes weed {
+  0% {
+    
+  }
+  15% {
+    
+  }
+  30% {
+    
+  }
+  55% {
+    
+  }
+  100% {
+    
+  }
+}
